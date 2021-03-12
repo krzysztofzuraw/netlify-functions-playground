@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{window.title}</title>
+    <title>{{ title }}</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         margin: 0;
         height: calc(100vh - 114px);
         display: grid;
@@ -18,8 +18,8 @@
         gap: 67px;
         /* width: 1200px; */
         grid-template-areas:
-          'image header'
-          'handle handle';
+          "image header"
+          "handle handle";
         background-image: repeating-radial-gradient(
             circle at center center,
             transparent 0px,
@@ -92,7 +92,7 @@
         </g>
       </svg>
     </div>
-    <h1>{window.title}</h1>
+    <h1>{{ title }}</h1>
     <p>@krzysztof_zuraw</p>
   </body>
 </html>

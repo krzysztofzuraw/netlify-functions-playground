@@ -5,6 +5,7 @@ const indexHTML = fs.readFileSync(
   path.resolve(__dirname, "index.html"),
   "utf-8"
 );
+const nunjucks = require("nunjucks");
 
 exports.handler = async function (event, ctx) {
   const browser = await playwright.launchChromium();
@@ -13,8 +14,9 @@ exports.handler = async function (event, ctx) {
     width: 1200,
     height: 630,
   });
-  await page.setContent(indexHTML);
-  await page.addScriptTag({ content: `window.title = "Home"` });
+  nunjucks.configure({ autoescape: true });
+  const html = nunjucks.render("index.html", { title: "bar" });
+  await page.setContent(html);
   const screenshotBuffer = await page.screenshot();
   await browser.close();
   return {
