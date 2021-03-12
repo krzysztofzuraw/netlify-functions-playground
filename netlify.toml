@@ -1,0 +1,3 @@
+[build]
+  functions = "functions/social-card"
+  command = "cd functions/social-card && npm i"
