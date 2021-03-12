@@ -15,7 +15,7 @@ exports.handler = async function (event, ctx) {
     height: 630,
   });
   nunjucks.configure({ autoescape: true });
-  const html = nunjucks.render("index.html", { title: "bar" });
+  const html = nunjucks.render(indexHTML, { title: "bar" });
   await page.setContent(html);
   const screenshotBuffer = await page.screenshot();
   await browser.close();
