@@ -9,9 +9,9 @@ exports.handler = async function (event, ctx) {
   //   width: 1200,
   //   height: 630,
   // });
-  console.log(path.resolve(__dirname));
+  console.log(path.resolve(__dirname, "src/index.html"));
   nunjucks.configure({ autoescape: true });
-  const html = nunjucks.render(require.resolve("./src/index.html"), {
+  const html = nunjucks.render(path.resolve(__dirname, "src/index.html"), {
     title:
       "How to dispatch multiple actions based on api call in redux-observable",
   });
