@@ -11,7 +11,7 @@ exports.handler = async function (event, ctx) {
   const title =
     "How to dispatch multiple actions based on api call in redux-observable";
   // TODO: figure out someday why netlify do not load external files into lamda
-  const HTML = ```<!DOCTYPE html>
+  const HTML = `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -107,7 +107,7 @@ exports.handler = async function (event, ctx) {
     <p>@krzysztof_zuraw</p>
   </body>
 </html>
-```;
+`;
 
   await page.setContent(HTML);
   const screenshotBuffer = await page.screenshot();
