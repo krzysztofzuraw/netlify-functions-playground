@@ -3,6 +3,6 @@
   command = "cd functions/social-card && npm i"
 
 [[redirects]]
-  to = "/.netlify/functions/social-card"
   from = "/social-image"
+  to = "/.netlify/functions/social-card"
   status = 200
