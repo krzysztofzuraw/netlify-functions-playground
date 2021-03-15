@@ -32,7 +32,7 @@ exports.handler = async function (event, ctx) {
   return {
     statusCode: 302,
     headers: {
-      location: imageUrl,
+      Location: imageUrl,
     },
   };
 };
