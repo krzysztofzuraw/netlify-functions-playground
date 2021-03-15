@@ -1,3 +1,8 @@
 [build]
   functions = "functions/social-card"
   command = "cd functions/social-card && npm i"
+
+[[redirects]]
+  from = "/.netlify/functions/social-card"
+  to = "/social-image"
+  status = 200
