@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node social-card.js"
+    "test": "node cloudinary-test.js"
   },
   "keywords": [],
   "author": "Krzysztof Żuraw <info@kzuraw.com> (https://krzysztofzuraw.com/)",
   "license": "MIT",
   "dependencies": {
+    "cloudinary": "1.25.0",
     "nunjucks": "3.2.3",
     "playwright-aws-lambda": "0.6.0",
     "playwright-core": "1.9.2"
